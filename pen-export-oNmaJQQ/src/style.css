@@ -1,0 +1,74 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #3498db; /* Blue */
+    color: #ecf0f1; /* Light gray */
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tab-btn {
+    background-color: #3498db; /* Blue */
+    color: #ecf0f1; /* Light gray */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tab-btn:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+}
+
+.product-section {
+    display: none;
+    margin: 20px;
+}
+
+h2 {
+    color: #3498db; /* Blue */
+}
+
+.product {
+    margin-top: 10px;
+    overflow: hidden;
+    border: 2px solid #bdc3c7; /* Darker gray */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* Zoom Out Animation */
+@keyframes zoomOut {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
